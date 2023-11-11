@@ -35,6 +35,7 @@ class PDFScreen extends StatelessWidget {
         backgroundColor: colors.primary,
         foregroundColor: colors.onPrimary,
         title: const Text('Impresión'),
+        centerTitle: true
       ),
       body: PdfPreview(
         build: (format) => _generatePDF(format, 'LiMa')
